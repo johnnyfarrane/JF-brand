@@ -1,0 +1,212 @@
+/* Simple Styles for JF Brand */
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --gold: #d4af37;
+    --gray: #777;
+    --light-gray: #f4f4f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.banner-section {
+    background: var(--black);
+    color: white;
+    text-align: center;
+    padding: 60px 5%;
+}
+
+.banner-section h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 40px 5%;
+    background: var(--light-gray);
+    min-height: 60vh; /* Reduced from 80vh to bring content up */
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: var(--gold);
+}
+
+.hero p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+.cta-btn {
+    padding: 12px 30px;
+    background: var(--black);
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.hero-image {
+    flex: 1;
+    height: 550px; /* Increased to see more of the photo */
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 75%; /* Show more of the body, keep the head out of view */
+    border-radius: 10px;
+}
+
+/* Products */
+.products-section {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.product-card {
+    width: 300px;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-info {
+    margin-top: 15px;
+}
+
+.price {
+    color: var(--gold);
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.buy-btn {
+    width: 100%;
+    padding: 10px;
+    background: var(--black);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* About */
+.about-section {
+    padding: 80px 5%;
+    text-align: center;
+    background: var(--black);
+    color: white;
+}
+
+/* Footer */
+footer {
+    padding: 40px 5%;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.copyright {
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content {
+        margin-bottom: 40px;
+    }
+}
