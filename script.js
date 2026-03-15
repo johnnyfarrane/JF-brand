@@ -1,11 +1,9 @@
-// Basic script for JF Brand website
-
 document.addEventListener('DOMContentLoaded', () => {
     
     // Find all buy buttons
     const buyButtons = document.querySelectorAll('.buy-btn');
 
-    // Add a simple click event to each button
+    // Add a click event to each button
     buyButtons.forEach(button => {
         button.addEventListener('click', () => {
             alert('Item added to cart! This is a simple demo.');
