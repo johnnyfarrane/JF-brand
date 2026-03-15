@@ -183,19 +183,29 @@ ul {
 
 .product-info {
     padding: 25px;
-    text-align: left;
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .product-info h3 {
     font-size: 1.4rem;
-    margin-bottom: 10px;
+    flex: 1;
+    text-align: center;
+    margin: 0;
 }
 
 .price {
     color: var(--gold);
     font-weight: bold;
     font-size: 1.2rem;
-    margin: 10px 0 20px 0;
+    margin: 0;
+    text-align: right;
+    min-width: 80px; /* Ensures price stays put if title is long */
 }
 
 .buy-btn {
